@@ -16,11 +16,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import pages.LoginPage;
+import pages.ProfilePage;
+import sharedData.Hooks;
 
 import java.time.Duration;
 
-public class CreateAccountTest {
-    public WebDriver driver;
+public class CreateAccountTest extends Hooks {
+
     @Test
     public void testMethod(){
        // definim comunicarea cu clientul
@@ -41,31 +44,12 @@ public class CreateAccountTest {
         ResponseBody responseBody=response.getBody();
         System.out.println(responseBody.asString());
 
-
         //deschidem un browser si ne logam in contul creat
-        driver=new ChromeDriver();
-        driver.get("https://demoqa.com/login");
-        driver.manage().window().maximize();
+        LoginPage loginPage=new LoginPage(getDriver());
+        loginPage.loginProcess(requestBody);
 
-        WebElement usernameElement=driver.findElement(By.id("userName"));
-        usernameElement.sendKeys(requestBody.getUserName());
-
-        WebElement passwordElement= driver.findElement(By.id("password"));
-        passwordElement.sendKeys(requestBody.getPassword());
-
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("window.scrollBy(0,500)", "");
-
-        WebElement loginElement= driver.findElement(By.id("login"));
-        loginElement.click();
-
-        WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("userName-value")));
-
-        WebElement usernameTextElement=driver.findElement(By.id("userName-value"));
-        String actualUserName=usernameTextElement.getText();
-        Assert.assertEquals(actualUserName,requestBody.getUserName(),"The username is not login with success");
-
+        ProfilePage profilePage=new ProfilePage(getDriver());
+        profilePage.validateLoginProcess(requestBody);
 
     }
 }
