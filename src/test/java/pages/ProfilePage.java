@@ -12,6 +12,7 @@ import org.testng.Assert;
 import java.time.Duration;
 
 public class ProfilePage extends BasePage{
+
     public ProfilePage(WebDriver driver) {
         super(driver);
     }
@@ -26,8 +27,5 @@ public class ProfilePage extends BasePage{
 
         String actualUserName=userNameTextElement.getText();
         Assert.assertEquals(actualUserName,requestBody.getUserName(),"The username is not login with success");
-
     }
-
-
 }

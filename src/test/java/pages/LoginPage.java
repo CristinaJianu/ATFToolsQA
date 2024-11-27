@@ -9,7 +9,6 @@ import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
 
-
     public LoginPage(WebDriver driver) {
         super(driver);
     }
@@ -22,7 +21,6 @@ public class LoginPage extends BasePage {
     private WebElement loginElement;
 
     public void loginProcess(RequestAccount requestBody){
-
         usernameElement.sendKeys(requestBody.getUserName());
         passwordElement.sendKeys(requestBody.getPassword());
         JavascriptExecutor js = (JavascriptExecutor) driver;

@@ -5,15 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1eba17ab-077e-48fa-ba1a-4667cbd11311" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sharedData/BrowserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/sharedData/Hooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/client/ApiClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelResponse/BookObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelResponse/ResponseAccountGetFailure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelResponse/ResponseAccountGetSuccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelResponse/ResponseAccountSuccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/modelResponse/ResponseTokenSuccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/AccountService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/services/BookStoreService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/tests/be/CreateAccountBeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/modelRequest/RequestAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/modelRequest/RequestAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CreateAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/CreateAccountTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ProfilePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/sharedData/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/sharedData/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/CreateAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/e2e/CreateAccountE2ETest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,18 +48,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.CreateAccountTest.testMethod.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.CreateAccountBeTest.executor": "Debug",
+    "TestNG.CreateAccountBeTest.testMethod.executor": "Run",
+    "TestNG.CreateAccountTest.testMethod.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="CreateAccountTest.testMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="modelResponse" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.CreateAccountBeTest.testMethod">
+    <configuration name="CreateAccountBeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATFTools" />
+      <option name="PACKAGE_NAME" value="tests.be" />
+      <option name="MAIN_CLASS_NAME" value="tests.be.CreateAccountBeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccountBeTest.testMethod" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ATFTools" />
+      <option name="PACKAGE_NAME" value="tests.be" />
+      <option name="MAIN_CLASS_NAME" value="tests.be.CreateAccountBeTest" />
+      <option name="METHOD_NAME" value="testMethod" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateAccountE2ETest.testMethod" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ATFTools" />
       <extension name="coverage">
         <pattern>
@@ -61,7 +98,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="tests" />
-      <option name="MAIN_CLASS_NAME" value="tests.CreateAccountTest" />
+      <option name="MAIN_CLASS_NAME" value="tests.e2e.CreateAccountE2ETest" />
       <option name="METHOD_NAME" value="testMethod" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
@@ -72,7 +109,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.CreateAccountTest.testMethod" />
+        <item itemvalue="TestNG.CreateAccountBeTest.testMethod" />
+        <item itemvalue="TestNG.CreateAccountBeTest" />
+        <item itemvalue="TestNG.CreateAccountE2ETest.testMethod" />
       </list>
     </recent_temporary>
   </component>
@@ -97,5 +136,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/tests/be/CreateAccountBeTest.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/client/ApiClient.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/client/ApiClient.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
